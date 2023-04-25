@@ -14,5 +14,6 @@ with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, op
         # if extracted number is even
         if extract_number % 2 == 0:
             # put extracted number to even.txt
+            even_output.write(str(extract_number))
         # else if the extracted number is odd
             # put extracted number to odd.txt

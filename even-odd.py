@@ -18,3 +18,4 @@ with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, op
         # else if the extracted number is odd
         elif extract_number % 2 == 1:
             # put extracted number to odd.txt
+            odd_output.write(str(extract_number))

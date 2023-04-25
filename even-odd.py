@@ -5,8 +5,10 @@
 # The second text file will be named odd.txt that will contains all odd numbers extracted from the numbers.txt.
 
 # open numbers.txt , even.txt, and odd.txt
+with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, open("odd.txt", 'w') as odd_output:
 
     # read number.txt by line
+    for line in input_file:
         # convert each line to integer
         # if extracted number is even
             # put extracted number to even.txt

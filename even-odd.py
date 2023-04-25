@@ -12,6 +12,7 @@ with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, op
         # convert each line to integer
         extract_number = int(line)
         # if extracted number is even
+        if extract_number % 2 == 0:
             # put extracted number to even.txt
         # else if the extracted number is odd
             # put extracted number to odd.txt

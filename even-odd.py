@@ -10,6 +10,7 @@ with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, op
     # read number.txt by line
     for line in input_file:
         # convert each line to integer
+        extract_number = int(line)
         # if extracted number is even
             # put extracted number to even.txt
         # else if the extracted number is odd

@@ -35,7 +35,7 @@ with open("numbers.txt", 'w') as input_file:
         
 print('\n' + Fore.YELLOW + "-"*150)
 print('\nPROCESSING. Please wait...')
-print("...")
+print('\n' + Fore.YELLOW + "-"*150)
 time.sleep(4)
 
 # open numbers.txt , even.txt, and odd.txt
@@ -74,5 +74,12 @@ with open("numbers.txt") as numbers_file1, open("even.txt") as even_num1, open("
     # show user odd numbers
     print(Fore.RED + "\n\n\tODD NUMBERS: " + Style.RESET_ALL, num_odd)
     time.sleep(2)
+
+# outro
+print('\n' + Fore.RED + "-"*150)
+done = pyfiglet.figlet_format("DONE!", font = 'drpepper', width = 150, justify = 'center')
+print(Fore.YELLOW + done)
+note = "See text files"
+print(Fore.RED + '-'*69 + Style.RESET_ALL + note + Fore.RED + '-'*69 + '\n') 
 
 # end of program

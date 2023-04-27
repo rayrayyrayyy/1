@@ -24,6 +24,15 @@ print(Style.RESET_ALL)
 # open file integers.txt(write)
 with open("numbers.txt", 'w') as input_file:
 
+    # create loop until we have 20 integers
+    i = 0
+    while (i < 2):
+        # ask user for numbers
+        user_numbers = input('\033[1;35m' + "\t\tPlease write a number: \033[0m")
+        # put the numbers to integers.txt
+        input_file.write((user_numbers) + '\n')
+        i += 1
+
 # open numbers.txt , even.txt, and odd.txt
 with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, open("odd.txt", 'w') as odd_output:
 

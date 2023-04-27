@@ -9,6 +9,17 @@ import pyfiglet
 import time
 from colorama import Fore, Back, Style
 
+# intro
+even_odd = pyfiglet.figlet_format('\n' + "EVEN and ODD!", font = "tanja", width = 150, justify = "center")
+print(Fore.LIGHTRED_EX + even_odd)
+print(Style.RESET_ALL)
+print(Fore.YELLOW + "-___-"*30)
+print(Style.RESET_ALL)
+instruction = "INSTRUCTION: Please enter 20 random integers and I'll identify if it's an even or odd number."
+instruction_center = instruction.center(150)
+print(instruction_center)
+print('\n' + Fore.YELLOW + "-___-"*30)
+print(Style.RESET_ALL)
 
 # open numbers.txt , even.txt, and odd.txt
 with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, open("odd.txt", 'w') as odd_output:

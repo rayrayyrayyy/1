@@ -21,7 +21,7 @@ print(instruction_center)
 print('\n' + Fore.YELLOW + "-___-"*30)
 print(Style.RESET_ALL)
 
-# open file integers.txt(write)
+# open file numbers.txt(write)
 with open("numbers.txt", 'w') as input_file:
 
     # create loop until we have 20 integers
@@ -53,5 +53,10 @@ with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, op
         elif extract_number % 2 == 1:
             # put extracted number to odd.txt
             odd_output.write(str(extract_number) + '\n')
+
+# output
+# open files numbers.txt(read), even.txt(write), and odd.txt(write)
+with open("integers.txt") as integers_file1, open("even.txt") as even_num1, open("odd.txt") as odd_num1:
+    
 
 # end of program

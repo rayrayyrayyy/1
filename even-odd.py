@@ -71,5 +71,8 @@ with open("numbers.txt") as numbers_file1, open("even.txt") as even_num1, open("
 
     # read odd.txt by line
     num_odd = [int(line) for line in odd_num1.read().split()]
+    # show user odd numbers
+    print(Fore.RED + "\n\n\tODD NUMBERS: " + Style.RESET_ALL, num_odd)
+    time.sleep(2)
 
 # end of program

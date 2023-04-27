@@ -59,6 +59,9 @@ with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, op
 with open("numbers.txt") as numbers_file1, open("even.txt") as even_num1, open("odd.txt") as odd_num1:
     # read numbers.txt by line
     user_num1 = [int(line) for line in numbers_file1.read().split()]
-    
+    # show user the numbers they entered
+    print(Fore.RED + "\n\n\tCHOSEN NUMBERS: " + Style.RESET_ALL, user_num1)
+    time.sleep(1)
+   
 
 # end of program

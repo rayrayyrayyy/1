@@ -69,4 +69,7 @@ with open("numbers.txt") as numbers_file1, open("even.txt") as even_num1, open("
     print(Fore.RED + "\n\n\tEVEN NUMBERS: " + Style.RESET_ALL, num_even)
     time.sleep(1)
 
+    # read odd.txt by line
+    num_odd = [int(line) for line in odd_num1.read().split()]
+
 # end of program

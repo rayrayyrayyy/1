@@ -21,6 +21,9 @@ print(instruction_center)
 print('\n' + Fore.YELLOW + "-___-"*30)
 print(Style.RESET_ALL)
 
+# open file integers.txt(write)
+with open("numbers.txt", 'w') as input_file:
+
 # open numbers.txt , even.txt, and odd.txt
 with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, open("odd.txt", 'w') as odd_output:
 

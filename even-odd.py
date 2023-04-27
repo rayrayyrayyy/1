@@ -62,6 +62,8 @@ with open("numbers.txt") as numbers_file1, open("even.txt") as even_num1, open("
     # show user the numbers they entered
     print(Fore.RED + "\n\n\tCHOSEN NUMBERS: " + Style.RESET_ALL, user_num1)
     time.sleep(1)
-   
+
+    # read even.txt by line
+    num_even = [int(line) for line in even_num1.read().split()]
 
 # end of program

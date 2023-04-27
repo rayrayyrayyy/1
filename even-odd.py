@@ -29,6 +29,9 @@ with open("numbers.txt", 'w') as input_file:
     while (i < 2):
         # ask user for numbers
         random_numbers = input('\033[0;31m' + "\t\tPlease write a number: \033[0m")
+        # put the numbers to numbers.txt
+        input_file.write((random_numbers) + '\n')
+        i += 1
         
 
 # open numbers.txt , even.txt, and odd.txt

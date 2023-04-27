@@ -33,6 +33,10 @@ with open("numbers.txt", 'w') as input_file:
         input_file.write((random_numbers) + '\n')
         i += 1
         
+print('\n' + Fore.YELLOW + "-"*150)
+print('\nPROCESSING. Please wait...')
+print("...")
+time.sleep(4)
 
 # open numbers.txt , even.txt, and odd.txt
 with open("numbers.txt") as input_file, open("even.txt", 'w') as even_output, open("odd.txt", 'w') as odd_output:

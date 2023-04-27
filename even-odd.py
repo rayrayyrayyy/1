@@ -65,5 +65,8 @@ with open("numbers.txt") as numbers_file1, open("even.txt") as even_num1, open("
 
     # read even.txt by line
     num_even = [int(line) for line in even_num1.read().split()]
+    # show user even numbers 
+    print(Fore.RED + "\n\n\tEVEN NUMBERS: " + Style.RESET_ALL, num_even)
+    time.sleep(1)
 
 # end of program
